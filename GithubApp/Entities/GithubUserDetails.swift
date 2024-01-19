@@ -8,11 +8,11 @@
 import Foundation
 
 struct GithubUserDetails: Codable {
-    let login: String?
-    let id: Int?
-    let avatarURL: String?
-    let name: String?
-    let followers, following: Int?
+    let login: String
+    let id: Int
+    let avatarURL: String
+    let name: String
+    let followers, following: Int
 
     enum CodingKeys: String, CodingKey {
         case login, id

@@ -5,7 +5,7 @@
 //  Created by Andres Mendieta on 16/01/24.
 //
 
-import Foundation
+import SwiftUI
 
 class UsersViewModel: ObservableObject {
     @Published var model = UsersModel()
@@ -42,7 +42,16 @@ class UsersViewModel: ObservableObject {
         githubUsers.map { user in
                 .init(id: user.id,
                       icon: user.avatarURL,
-                      userName: user.login)
+                      userName: user.login.capitalized)
         }
+    }
+
+    func goToDetailsViewFor(user: String) -> some View {
+        let viewModel = UserDetailsViewModel(
+            userName: user,
+            useCase: FetchUserDetailsUseCase(repository: Repository())
+        )
+
+        return UserDetailsView(viewModel: viewModel)
     }
 }

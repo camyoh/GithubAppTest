@@ -48,7 +48,6 @@ class Repository: RepositoryProtocol {
 
         do {
             let (data, _) = try await URLSession.shared.data(from: apiUrl)
-
             let decoder = JSONDecoder()
             let userRepos = try decoder.decode(GithubUserRepos.self, from: data)
 

@@ -27,6 +27,9 @@
 		1C1E07DD2B5773A1002E859F /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07DC2B5773A1002E859F /* UserDetailsView.swift */; };
 		1C1E07DF2B5773C8002E859F /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07DE2B5773C8002E859F /* UsersViewModel.swift */; };
 		1C1E07E22B577A44002E859F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07E12B577A44002E859F /* UserModel.swift */; };
+		1C1E07E52B59BAB5002E859F /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07E42B59BAB5002E859F /* UserDetailsViewModel.swift */; };
+		1C1E07E72B5A0E61002E859F /* SafariWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07E62B5A0E61002E859F /* SafariWebView.swift */; };
+		1C1E07EB2B5AD6F9002E859F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07EA2B5AD6F9002E859F /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		1C1E07DC2B5773A1002E859F /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		1C1E07DE2B5773C8002E859F /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		1C1E07E12B577A44002E859F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1C1E07E42B59BAB5002E859F /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		1C1E07E62B5A0E61002E859F /* SafariWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebView.swift; sourceTree = "<group>"; };
+		1C1E07EA2B5AD6F9002E859F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +119,8 @@
 				1C1E07C92B563FF9002E859F /* FetchUsersUseCase.swift */,
 				1C1E07CB2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift */,
 				1C1E07CF2B56EEFD002E859F /* FetchUserDetailsUseCase.swift */,
-				1C1E07D72B576FEC002E859F /* Models */,
+				1C1E07E62B5A0E61002E859F /* SafariWebView.swift */,
+				1C1E07EA2B5AD6F9002E859F /* Coordinator.swift */,
 				1C1E07972B562EB8002E859F /* Assets.xcassets */,
 				1C1E07992B562EB8002E859F /* Preview Content */,
 			);
@@ -170,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				1C1E07DC2B5773A1002E859F /* UserDetailsView.swift */,
+				1C1E07E42B59BAB5002E859F /* UserDetailsViewModel.swift */,
+				1C1E07D72B576FEC002E859F /* Models */,
 			);
 			path = UserDetails;
 			sourceTree = "<group>";
@@ -276,6 +285,7 @@
 			files = (
 				1C1E07C62B563E3E002E859F /* FetchUsersUseCaseProtocol.swift in Sources */,
 				1C1E07962B562EB6002E859F /* UsersView.swift in Sources */,
+				1C1E07E52B59BAB5002E859F /* UserDetailsViewModel.swift in Sources */,
 				1C1E07D62B576F25002E859F /* UserRepoModel.swift in Sources */,
 				1C1E07CA2B563FF9002E859F /* FetchUsersUseCase.swift in Sources */,
 				1C1E07DD2B5773A1002E859F /* UserDetailsView.swift in Sources */,
@@ -284,6 +294,8 @@
 				1C1E07D02B56EEFD002E859F /* FetchUserDetailsUseCase.swift in Sources */,
 				1C1E07CC2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift in Sources */,
 				1C1E07C02B563A6E002E859F /* GithubUser.swift in Sources */,
+				1C1E07E72B5A0E61002E859F /* SafariWebView.swift in Sources */,
+				1C1E07EB2B5AD6F9002E859F /* Coordinator.swift in Sources */,
 				1C1E07C82B563E98002E859F /* UsersModel.swift in Sources */,
 				1C1E07BE2B563749002E859F /* RepositoryProtocol.swift in Sources */,
 				1C1E07C22B563ABA002E859F /* GithubUserDetails.swift in Sources */,

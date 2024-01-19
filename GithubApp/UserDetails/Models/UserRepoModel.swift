@@ -7,20 +7,23 @@
 
 import Foundation
 
-class UserRepoModel {
+class UserRepoModel: Identifiable {
+    let id: Int
     let name: String
     let language: String
     let numberStars: Int
     let description: String
-    let url: String
+    let url: URL?
 
     init(
-        name: String,
-        language: String,
-        numberStars: Int,
-        description: String,
-        url: String
+        id: Int = 0,
+        name: String = "",
+        language: String = "",
+        numberStars: Int = 0,
+        description: String = "",
+        url: URL? = nil
     ) {
+        self.id = id
         self.name = name
         self.language = language
         self.numberStars = numberStars

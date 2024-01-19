@@ -32,7 +32,6 @@ class FetchUserDetailsUseCase: FetchUserDetailsUseCaseProtocol {
 
         do {
             let userRepos = try await repository.fetchUserReposFor(userName: userName)
-            print(userRepos)
             return userRepos
         } catch {
             print("Error: \(error)")

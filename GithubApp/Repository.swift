@@ -20,7 +20,10 @@ class Repository: RepositoryProtocol {
 
             return users
         } catch {
-            throw GithubAPIError.requestFailed
+            if let error = error as? URLError {
+                throw GithubAPIError.noInternet
+            }
+            throw GithubAPIError.decodingError
         }
     }
     
@@ -37,7 +40,7 @@ class Repository: RepositoryProtocol {
 
             return userDescription
         } catch {
-            throw GithubAPIError.requestFailed
+            throw GithubAPIError.decodingError
         }
     }
 
@@ -53,7 +56,7 @@ class Repository: RepositoryProtocol {
 
             return userRepos
         } catch {
-            throw GithubAPIError.requestFailed
+            throw GithubAPIError.decodingError
         }
 
     }
@@ -66,4 +69,5 @@ enum GithubAPIError: Error {
     case requestFailed
     case invalidResponse
     case decodingError
+    case noInternet
 }

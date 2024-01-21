@@ -9,22 +9,20 @@ import SwiftUI
 
 @main
 struct GithubAppApp: App {
-    @StateObject private var coordinator = Coordinator()
     private let repository: RepositoryProtocol
     private let useCase: FetchUsersUseCase
-    private let viewModel: UsersViewModel
+    private let viewModel: ListViewModel
 
     init() {
         self.repository = Repository()
         self.useCase = FetchUsersUseCase(repository: repository)
-        self.viewModel = UsersViewModel(useCase: useCase)
+        self.viewModel = ListViewModel(useCase: useCase)
     }
 
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                UsersView(viewModel: viewModel)
-                    .environmentObject(coordinator)
+                ListView(viewModel: viewModel)
             }
         }
     }

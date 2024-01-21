@@ -10,7 +10,7 @@ import Foundation
 struct UserModel: Equatable, Identifiable {
     let id: Int
     let icon: String
-    let userName: String
+    let name: String
 
     init(
         id: Int,
@@ -19,12 +19,12 @@ struct UserModel: Equatable, Identifiable {
     ) {
         self.id = id
         self.icon = icon
-        self.userName = userName
+        self.name = userName
     }
 }
 
 extension UserModel: CustomStringConvertible {
     var description: String {
-        "\n{icon: \(icon), user: \(userName)}"
+        "\n{icon: \(icon), user: \(name)}"
     }
 }

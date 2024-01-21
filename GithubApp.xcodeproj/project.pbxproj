@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C19D4B42B5C7635008E9E4F /* ErrorViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C19D4B32B5C7635008E9E4F /* ErrorViewFactory.swift */; };
 		1C1E07942B562EB6002E859F /* GithubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07932B562EB6002E859F /* GithubAppApp.swift */; };
-		1C1E07962B562EB6002E859F /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07952B562EB6002E859F /* UsersView.swift */; };
+		1C1E07962B562EB6002E859F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07952B562EB6002E859F /* ListView.swift */; };
 		1C1E07982B562EB8002E859F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E07972B562EB8002E859F /* Assets.xcassets */; };
 		1C1E079B2B562EB8002E859F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E079A2B562EB8002E859F /* Preview Assets.xcassets */; };
 		1C1E07A52B562EB8002E859F /* GithubAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07A42B562EB8002E859F /* GithubAppTests.swift */; };
@@ -17,7 +18,6 @@
 		1C1E07C22B563ABA002E859F /* GithubUserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07C12B563ABA002E859F /* GithubUserDetails.swift */; };
 		1C1E07C42B563C6A002E859F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07C32B563C6A002E859F /* Repository.swift */; };
 		1C1E07C62B563E3E002E859F /* FetchUsersUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07C52B563E3E002E859F /* FetchUsersUseCaseProtocol.swift */; };
-		1C1E07C82B563E98002E859F /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07C72B563E98002E859F /* UsersModel.swift */; };
 		1C1E07CA2B563FF9002E859F /* FetchUsersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07C92B563FF9002E859F /* FetchUsersUseCase.swift */; };
 		1C1E07CC2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07CB2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift */; };
 		1C1E07CE2B56EE5E002E859F /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07CD2B56EE5E002E859F /* UserDetailsModel.swift */; };
@@ -25,11 +25,10 @@
 		1C1E07D22B57639E002E859F /* GithubUserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07D12B57639E002E859F /* GithubUserRepo.swift */; };
 		1C1E07D62B576F25002E859F /* UserRepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07D52B576F25002E859F /* UserRepoModel.swift */; };
 		1C1E07DD2B5773A1002E859F /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07DC2B5773A1002E859F /* UserDetailsView.swift */; };
-		1C1E07DF2B5773C8002E859F /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07DE2B5773C8002E859F /* UsersViewModel.swift */; };
+		1C1E07DF2B5773C8002E859F /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07DE2B5773C8002E859F /* ListViewModel.swift */; };
 		1C1E07E22B577A44002E859F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07E12B577A44002E859F /* UserModel.swift */; };
 		1C1E07E52B59BAB5002E859F /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07E42B59BAB5002E859F /* UserDetailsViewModel.swift */; };
 		1C1E07E72B5A0E61002E859F /* SafariWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07E62B5A0E61002E859F /* SafariWebView.swift */; };
-		1C1E07EB2B5AD6F9002E859F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E07EA2B5AD6F9002E859F /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C19D4B32B5C7635008E9E4F /* ErrorViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewFactory.swift; sourceTree = "<group>"; };
 		1C1E07902B562EB6002E859F /* GithubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1E07932B562EB6002E859F /* GithubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAppApp.swift; sourceTree = "<group>"; };
-		1C1E07952B562EB6002E859F /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		1C1E07952B562EB6002E859F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		1C1E07972B562EB8002E859F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1E079A2B562EB8002E859F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1C1E07A02B562EB8002E859F /* GithubAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +55,6 @@
 		1C1E07C12B563ABA002E859F /* GithubUserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserDetails.swift; sourceTree = "<group>"; };
 		1C1E07C32B563C6A002E859F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		1C1E07C52B563E3E002E859F /* FetchUsersUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUsersUseCaseProtocol.swift; sourceTree = "<group>"; };
-		1C1E07C72B563E98002E859F /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		1C1E07C92B563FF9002E859F /* FetchUsersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUsersUseCase.swift; sourceTree = "<group>"; };
 		1C1E07CB2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserDetailsUseCaseProtocol.swift; sourceTree = "<group>"; };
 		1C1E07CD2B56EE5E002E859F /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
@@ -63,11 +62,10 @@
 		1C1E07D12B57639E002E859F /* GithubUserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserRepo.swift; sourceTree = "<group>"; };
 		1C1E07D52B576F25002E859F /* UserRepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepoModel.swift; sourceTree = "<group>"; };
 		1C1E07DC2B5773A1002E859F /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
-		1C1E07DE2B5773C8002E859F /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		1C1E07DE2B5773C8002E859F /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		1C1E07E12B577A44002E859F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1C1E07E42B59BAB5002E859F /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		1C1E07E62B5A0E61002E859F /* SafariWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebView.swift; sourceTree = "<group>"; };
-		1C1E07EA2B5AD6F9002E859F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +113,10 @@
 				1C1E07BD2B563748002E859F /* RepositoryProtocol.swift */,
 				1C1E07C32B563C6A002E859F /* Repository.swift */,
 				1C1E07D42B576E22002E859F /* Entities */,
-				1C1E07C52B563E3E002E859F /* FetchUsersUseCaseProtocol.swift */,
-				1C1E07C92B563FF9002E859F /* FetchUsersUseCase.swift */,
 				1C1E07CB2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift */,
 				1C1E07CF2B56EEFD002E859F /* FetchUserDetailsUseCase.swift */,
 				1C1E07E62B5A0E61002E859F /* SafariWebView.swift */,
-				1C1E07EA2B5AD6F9002E859F /* Coordinator.swift */,
+				1C19D4B32B5C7635008E9E4F /* ErrorViewFactory.swift */,
 				1C1E07972B562EB8002E859F /* Assets.xcassets */,
 				1C1E07992B562EB8002E859F /* Preview Content */,
 			);
@@ -165,10 +161,11 @@
 		1C1E07E02B577760002E859F /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
-				1C1E07952B562EB6002E859F /* UsersView.swift */,
-				1C1E07DE2B5773C8002E859F /* UsersViewModel.swift */,
-				1C1E07C72B563E98002E859F /* UsersModel.swift */,
+				1C1E07952B562EB6002E859F /* ListView.swift */,
+				1C1E07DE2B5773C8002E859F /* ListViewModel.swift */,
 				1C1E07E12B577A44002E859F /* UserModel.swift */,
+				1C1E07C52B563E3E002E859F /* FetchUsersUseCaseProtocol.swift */,
+				1C1E07C92B563FF9002E859F /* FetchUsersUseCase.swift */,
 			);
 			path = UsersList;
 			sourceTree = "<group>";
@@ -284,20 +281,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1E07C62B563E3E002E859F /* FetchUsersUseCaseProtocol.swift in Sources */,
-				1C1E07962B562EB6002E859F /* UsersView.swift in Sources */,
+				1C1E07962B562EB6002E859F /* ListView.swift in Sources */,
 				1C1E07E52B59BAB5002E859F /* UserDetailsViewModel.swift in Sources */,
 				1C1E07D62B576F25002E859F /* UserRepoModel.swift in Sources */,
 				1C1E07CA2B563FF9002E859F /* FetchUsersUseCase.swift in Sources */,
 				1C1E07DD2B5773A1002E859F /* UserDetailsView.swift in Sources */,
 				1C1E07942B562EB6002E859F /* GithubAppApp.swift in Sources */,
-				1C1E07DF2B5773C8002E859F /* UsersViewModel.swift in Sources */,
+				1C1E07DF2B5773C8002E859F /* ListViewModel.swift in Sources */,
 				1C1E07D02B56EEFD002E859F /* FetchUserDetailsUseCase.swift in Sources */,
 				1C1E07CC2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift in Sources */,
 				1C1E07C02B563A6E002E859F /* GithubUser.swift in Sources */,
 				1C1E07E72B5A0E61002E859F /* SafariWebView.swift in Sources */,
-				1C1E07EB2B5AD6F9002E859F /* Coordinator.swift in Sources */,
-				1C1E07C82B563E98002E859F /* UsersModel.swift in Sources */,
 				1C1E07BE2B563749002E859F /* RepositoryProtocol.swift in Sources */,
+				1C19D4B42B5C7635008E9E4F /* ErrorViewFactory.swift in Sources */,
 				1C1E07C22B563ABA002E859F /* GithubUserDetails.swift in Sources */,
 				1C1E07E22B577A44002E859F /* UserModel.swift in Sources */,
 				1C1E07C42B563C6A002E859F /* Repository.swift in Sources */,

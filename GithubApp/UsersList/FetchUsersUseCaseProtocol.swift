@@ -8,6 +8,5 @@
 import Foundation
 
 protocol FetchUsersUseCaseProtocol {
-    var isLoadingUsers: Bool { get set }
     func getUsersIn(page: Int) async throws -> GithubUsers
 }

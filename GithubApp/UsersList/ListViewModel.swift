@@ -12,6 +12,7 @@ class ListViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var error: GithubAPIError? = nil
     private let useCase: FetchUsersUseCaseProtocol
+    private let usersPerPage = 46
     private var page = 0
 
     init(
@@ -47,7 +48,7 @@ class ListViewModel: ObservableObject {
     }
 
     func fetchNewPageOfUsers() {
-        page = page + 46
+        page += usersPerPage
         fetchUsers()
     }
 

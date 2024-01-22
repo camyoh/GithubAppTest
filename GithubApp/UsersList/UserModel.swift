@@ -22,9 +22,3 @@ struct UserModel: Equatable, Identifiable {
         self.name = userName
     }
 }
-
-extension UserModel: CustomStringConvertible {
-    var description: String {
-        "\n{icon: \(icon), user: \(name)}"
-    }
-}

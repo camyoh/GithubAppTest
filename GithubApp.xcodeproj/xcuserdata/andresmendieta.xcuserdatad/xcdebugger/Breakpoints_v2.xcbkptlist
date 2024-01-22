@@ -3,4 +3,100 @@
    uuid = "FE0C0F09-95B8-414B-B7B3-5A01018B3966"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BAB76DA5-069E-42E5-BF71-7C5448329E7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubApp/ErrorViewFactory.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "make(for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F28B5A72-0938-4159-8296-FD05DDD4FDDF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GithubApp/Repository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchAllUsersIn(page:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F28B5A72-0938-4159-8296-FD05DDD4FDDF - 80b34ef0bb4b5038"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for GithubApp.Repository.fetchAllUsersIn(page: Swift.Int) async throws -&gt; Swift.Array&lt;GithubApp.GithubUser&gt;"
+                  moduleName = "GithubApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresmendieta/Develop/GithubApp/GithubApp/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "F28B5A72-0938-4159-8296-FD05DDD4FDDF - d566111d17772e3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for GithubApp.Repository.fetchAllUsersIn(page: Swift.Int) async throws -&gt; Swift.Array&lt;GithubApp.GithubUser&gt;"
+                  moduleName = "GithubApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresmendieta/Develop/GithubApp/GithubApp/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "F28B5A72-0938-4159-8296-FD05DDD4FDDF - 80b34ef0bb4b5038"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for GithubApp.Repository.fetchAllUsersIn(page: Swift.Int) async throws -&gt; Swift.Array&lt;GithubApp.GithubUser&gt;"
+                  moduleName = "GithubApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresmendieta/Develop/GithubApp/GithubApp/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "632">
+               </Location>
+               <Location
+                  uuid = "F28B5A72-0938-4159-8296-FD05DDD4FDDF - d566111d17772e3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for GithubApp.Repository.fetchAllUsersIn(page: Swift.Int) async throws -&gt; Swift.Array&lt;GithubApp.GithubUser&gt;"
+                  moduleName = "GithubApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andresmendieta/Develop/GithubApp/GithubApp/Repository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "152">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

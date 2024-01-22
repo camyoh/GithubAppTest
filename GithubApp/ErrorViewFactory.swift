@@ -11,40 +11,17 @@ struct ErrorViewFactory {
     static func make(for error: GithubAPIError?) -> some View {
         switch error {
             case .decodingError:
-                return AnyView(
-                    Text("Decoding Error")
-                )
+                return ErrorViews(type: .decodingError)
             case .invalidResponse:
-                return AnyView(
-                    Text("Invalid Response")
-                )
+                return ErrorViews(type: .invalidResponse)
             case .invalidURL:
-                return AnyView(
-                    Text("Invalid Url")
-                )
+                return ErrorViews(type: .invalidURL)
             case .noInternet:
-                return AnyView(
-                    VStack(content: {
-                        Image(systemName: "wifi.slash")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-                        Text("Please check your internet connection")
-                            .font(.title2)
-                            .multilineTextAlignment(.center)
-                        Text("Tap here to try again")
-                            .font(.callout)
-                            .multilineTextAlignment(.center)
-                    })
-                )
+                return ErrorViews(type: .noInternet)
             case .requestFailed:
-                return AnyView(
-                    Text("Request Failed")
-                )
+                return ErrorViews(type: .requestFailed)
             default:
-                return AnyView(
-                    Text("Ups we have some problems...")
-                )
+                return ErrorViews(type: .requestFailed)
         }
     }
 }

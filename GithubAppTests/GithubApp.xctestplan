@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "0380EF02-3731-4E08-8475-941E3489BFED",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:GithubApp.xcodeproj",
+        "identifier" : "1C6ED7732B5DA0DB00D15508",
+        "name" : "GithubAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

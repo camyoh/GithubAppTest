@@ -53,8 +53,5 @@ struct ListView: View {
             viewModel.onAppear()
         })
     }
-}
 
-    //#Preview {
-    //    ListView(viewModel: ListViewModel(useCase: FetchUsersUseCase(repository: Repository())))
-    //}
+}

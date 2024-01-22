@@ -8,37 +8,41 @@
 import Foundation
 
 class Repository: RepositoryProtocol {
-    func fetchAllUsersIn(page: Int = 0) async throws -> GithubUsers {
+
+    private let apiClient: ApiClientProtocol
+    private let dataDecoder: DataDecoderProtocol
+
+    init(
+        apiClient: ApiClientProtocol = URLSessionAPIClient(),
+        dataDecoder: DataDecoderProtocol = JSONDecoderWrapper()
+    ) {
+        self.apiClient = apiClient
+        self.dataDecoder = dataDecoder
+    }
+
+    func fetchAllUsersIn(page: Int) async throws -> GithubUsers {
         guard let apiUrl = URL(string: "https://api.github.com/users?since=\(page)") else {
             throw GithubAPIError.invalidURL
         }
+
         do {
-            let (data, _) = try await URLSession.shared.data(from: apiUrl)
-
-            let decoder = JSONDecoder()
-            let users = try decoder.decode(GithubUsers.self, from: data)
-
+            let data = try await apiClient.fetchData(from: apiUrl)
+            let users = try dataDecoder.decode(GithubUsers.self, from: data)
             return users
         } catch {
-            if let error = error as? URLError {
-                throw GithubAPIError.noInternet
-            }
-            throw GithubAPIError.decodingError
+            throw error
         }
     }
-    
+
     func fetchUserDetailsFor(userName: String) async throws -> GithubUserDetails {
         guard let apiUrl = URL(string: "https://api.github.com/users/\(userName)") else {
             throw GithubAPIError.invalidURL
         }
 
         do {
-            let (data, _) = try await URLSession.shared.data(from: apiUrl)
-
-            let decoder = JSONDecoder()
-            let userDescription = try decoder.decode(GithubUserDetails.self, from: data)
-
-            return userDescription
+            let data = try await apiClient.fetchData(from: apiUrl)
+            let userDetails = try dataDecoder.decode(GithubUserDetails.self, from: data)
+            return userDetails
         } catch {
             throw GithubAPIError.decodingError
         }
@@ -50,18 +54,13 @@ class Repository: RepositoryProtocol {
         }
 
         do {
-            let (data, _) = try await URLSession.shared.data(from: apiUrl)
-            let decoder = JSONDecoder()
-            let userRepos = try decoder.decode(GithubUserRepos.self, from: data)
-
+            let data = try await apiClient.fetchData(from: apiUrl)
+            let userRepos = try dataDecoder.decode(GithubUserRepos.self, from: data)
             return userRepos
         } catch {
             throw GithubAPIError.decodingError
         }
-
     }
-
-
 }
 
 enum GithubAPIError: Error {

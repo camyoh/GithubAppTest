@@ -139,16 +139,9 @@
 				1C1E07932B562EB6002E859F /* GithubAppApp.swift */,
 				1C1E07E02B577760002E859F /* UsersList */,
 				1C1E07E32B58C3F4002E859F /* UserDetails */,
-				1C1E07BD2B563748002E859F /* RepositoryProtocol.swift */,
-				1C1E07C32B563C6A002E859F /* Repository.swift */,
-				1C6ED7922B5E0AC700D15508 /* URLSessionAPIClient.swift */,
-				1C6ED7942B5E0B3D00D15508 /* DataDecoder.swift */,
+				1C6ED7A52B5E247600D15508 /* Networking */,
 				1C1E07D42B576E22002E859F /* Entities */,
-				1C1E07CB2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift */,
-				1C1E07CF2B56EEFD002E859F /* FetchUserDetailsUseCase.swift */,
-				1C1E07E62B5A0E61002E859F /* SafariWebView.swift */,
-				1C19D4B32B5C7635008E9E4F /* ErrorViewFactory.swift */,
-				1C6ED78A2B5DEE8600D15508 /* ErrorViews.swift */,
+				1C6ED7A72B5E249F00D15508 /* ErrorHandle */,
 				1C1E07972B562EB8002E859F /* Assets.xcassets */,
 				1C1E07992B562EB8002E859F /* Preview Content */,
 			);
@@ -185,11 +178,8 @@
 		1C1E07E02B577760002E859F /* UsersList */ = {
 			isa = PBXGroup;
 			children = (
-				1C1E07952B562EB6002E859F /* ListView.swift */,
-				1C1E07DE2B5773C8002E859F /* ListViewModel.swift */,
-				1C1E07E12B577A44002E859F /* UserModel.swift */,
-				1C1E07C52B563E3E002E859F /* FetchUsersUseCaseProtocol.swift */,
-				1C1E07C92B563FF9002E859F /* FetchUsersUseCase.swift */,
+				1C6ED79C2B5E237400D15508 /* Presentation */,
+				1C6ED7A02B5E23AE00D15508 /* UseCases */,
 			);
 			path = UsersList;
 			sourceTree = "<group>";
@@ -197,9 +187,8 @@
 		1C1E07E32B58C3F4002E859F /* UserDetails */ = {
 			isa = PBXGroup;
 			children = (
-				1C1E07DC2B5773A1002E859F /* UserDetailsView.swift */,
-				1C1E07E42B59BAB5002E859F /* UserDetailsViewModel.swift */,
-				1C1E07D72B576FEC002E859F /* Models */,
+				1C6ED7A32B5E240700D15508 /* Presentation */,
+				1C6ED7A42B5E241E00D15508 /* UseCases */,
 			);
 			path = UserDetails;
 			sourceTree = "<group>";
@@ -222,6 +211,113 @@
 				1C6ED78C2B5DEF3300D15508 /* ErrorViewFactoryTests.swift */,
 			);
 			path = GithubAppTests;
+			sourceTree = "<group>";
+		};
+		1C6ED79C2B5E237400D15508 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1C6ED79D2B5E238100D15508 /* Views */,
+				1C6ED79E2B5E238C00D15508 /* ViewModel */,
+				1C6ED79F2B5E239700D15508 /* Models */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1C6ED79D2B5E238100D15508 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E07952B562EB6002E859F /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C6ED79E2B5E238C00D15508 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E07DE2B5773C8002E859F /* ListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1C6ED79F2B5E239700D15508 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E07E12B577A44002E859F /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C6ED7A02B5E23AE00D15508 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E07C52B563E3E002E859F /* FetchUsersUseCaseProtocol.swift */,
+				1C1E07C92B563FF9002E859F /* FetchUsersUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		1C6ED7A12B5E23F000D15508 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E07E42B59BAB5002E859F /* UserDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1C6ED7A22B5E23FB00D15508 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E07DC2B5773A1002E859F /* UserDetailsView.swift */,
+				1C1E07E62B5A0E61002E859F /* SafariWebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C6ED7A32B5E240700D15508 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1C6ED7A22B5E23FB00D15508 /* Views */,
+				1C6ED7A12B5E23F000D15508 /* ViewModel */,
+				1C1E07D72B576FEC002E859F /* Models */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1C6ED7A42B5E241E00D15508 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E07CB2B56ED5D002E859F /* FetchUserDetailsUseCaseProtocol.swift */,
+				1C1E07CF2B56EEFD002E859F /* FetchUserDetailsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		1C6ED7A52B5E247600D15508 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1C6ED7A62B5E248A00D15508 /* Repository */,
+				1C6ED7922B5E0AC700D15508 /* URLSessionAPIClient.swift */,
+				1C6ED7942B5E0B3D00D15508 /* DataDecoder.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1C6ED7A62B5E248A00D15508 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1C1E07BD2B563748002E859F /* RepositoryProtocol.swift */,
+				1C1E07C32B563C6A002E859F /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1C6ED7A72B5E249F00D15508 /* ErrorHandle */ = {
+			isa = PBXGroup;
+			children = (
+				1C19D4B32B5C7635008E9E4F /* ErrorViewFactory.swift */,
+				1C6ED78A2B5DEE8600D15508 /* ErrorViews.swift */,
+			);
+			path = ErrorHandle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
